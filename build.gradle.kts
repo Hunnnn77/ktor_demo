@@ -14,6 +14,12 @@ application {
     mainClass = "io.ktor.server.netty.EngineMain"
 }
 
+ktor {
+    fatJar {
+        archiveFileName.set("my-application.jar")
+    }
+}
+
 dependencies {
     implementation("io.ktor:ktor-server-core")
     implementation("io.ktor:ktor-server-content-negotiation")
