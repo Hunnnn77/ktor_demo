@@ -13,6 +13,7 @@ fun Application.configureRouting() {
     routing {
         post("/") {
             val user = call.receive<User>()
+            val user2 = call.receive<User>()
         }
 
         get("/") {
